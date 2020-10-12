@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
 	<title>TMBViatges</title>
 	<link rel="shortcut icon" href="./img/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
 <body>
 	<header>
@@ -25,12 +24,17 @@
 					<tbody></tbody>
 				</table>
 			</div>
-			<label><input type="checkbox" name="jove" id="jove">Incloure T-Jove (per a persones de 24 anys o menys)</label>
+			<label><input type="checkbox" name="jove" id="jove">Incloure T-Jove (per a persones de 24 anys o menys)</label><br/>
+			<label><input type="checkbox" name="uni" id="uni">Mostrar targetes unipersonals</label>
 			<br/><br/>
 		</div>
 		<form id="form-submit" action='./resultats.html' method="GET">
-			<input type="hidden" name="d" value="e301"/>
-			<div><button id="calculate-button">Calcular</button> <button id="exceptions-button">Dies excepcionals</button></div>
+			<div>
+				<button id="calculate-button">Calcular</button>
+				<button id="exceptions-button">Dies excepcionals</button>
+				<br/>
+				<button id="delete-stored">Netejar sessió</button>
+			</div>
 		</form>
 	</div>
 
